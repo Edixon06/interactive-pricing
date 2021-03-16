@@ -15,8 +15,14 @@
     --light-grayish-blue: hsl(223, 50%, 87%);
     --grayish-blue: hsl(225, 20%, 60%);
     --dark-desaturated-blue: hsl(227, 35%, 25%);
+    --main-font: Manrope;
+}
+@font-face {
+    font-family: Manrope;
+    src: url(./assets/fonts/Manrope-VariableFont_wght.ttf);
 }
 body {
+    font-family: var(--main-font);
     overflow-x: hidden;
 }
 ul {
@@ -42,6 +48,7 @@ ul {
 }
 .heading {
     margin-bottom: 5rem;
+    text-align: center;
 }
 .range-container {
     background-color: var(--white);
@@ -124,4 +131,24 @@ input:checked + .slide:before {
 }
 .round {
     border-radius: 20px;
+}
+
+.list-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.list-button-container li img {
+    margin-right: 1rem;
+}
+.button {
+    background-color: var(--dark-desaturated-blue);
+    border: none;
+    border-radius: 100px;
+    color: var(--very-pale-blue);
+    display: block;
+    padding: 2% 7%;
+    max-height: 40px;
+    outline: none;
 }
