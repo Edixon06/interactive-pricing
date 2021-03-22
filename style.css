@@ -132,7 +132,9 @@ input:checked + .slide:before {
 .round {
     border-radius: 20px;
 }
-
+.range-container hr {
+    width: 100%;
+}
 .list-button-container {
     display: flex;
     align-items: center;
@@ -151,4 +153,28 @@ input:checked + .slide:before {
     padding: 2% 7%;
     max-height: 40px;
     outline: none;
+}
+
+@media (max-width: 768px){
+    .range-container {
+        min-width: 60vw;
+    }
+}
+@media (max-width: 425px){
+    .main-container {
+        width: 80%;
+    }
+    .range-container {
+        width: 100%;
+    }
+    .list-button-container {
+        flex-direction: column;
+    }
+    .list-button-container ul {
+        margin: 1rem auto;
+    }
+    .button {
+        min-height: 35px;
+        min-width: 10rem;
+    }
 }
